@@ -12,7 +12,7 @@ const readline = require("readline")
 const { parsePhoneNumber } = require("libphonenumber-js")
 
 
-let phoneNumber = "916909137213"
+let phoneNumber = "254742491666"
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
@@ -85,20 +85,41 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
         const { connection, lastDisconnect } = s
         if (connection == "open") {
             await delay(1000 * 10)
-            await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `🪀Support/Contact Developer\n\n\n⎆Donate: https://i.ibb.co/W2gYn6S/binance.png\n\n⎆YouTube: https://youtube.com/@DGXeon\n\n⎆Telegram Channel: https://t.me/xeonbotinc\n\n⎆Telegram Chat: https://t.me/+AYOyJflnt-AzNGFl\n\n⎆WhatsApp Gc1: https://chat.whatsapp.com/Kjm8rnDFcpb04gQNSTbW2d\n\n⎆WhatsApp Gc2: https://chat.whatsapp.com/EEOnU0V7dl9HF1mMFO8QWa\n\n⎆WhatsApp Gc3: https://chat.whatsapp.com/Dh0lD0Ee5hN1JMFXNqtxSG\n\n⎆WhatsApp Pm: Wa.me/916909137213\n\n⎆Instagram: https://instagram.com/unicorn_xeon13\n\n⎆GitHub: https://github.com/DGXeon/\n\n⎆Blog: https://dreamguyxeonfiles.blogspot.com/2022/05/bots%20whatsapp%20mods.html?m=1\n\n\n` });
+            await XeonBotInc.sendMessage(XeonBotInc.user.id, { text:  `🪀Support/Contact Developer
+
+
+⎆Welcome to Classic Bot
+
+⎆Whatsapp Channel: https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e
+
+⎆WhatsApp Gc1: https://chat.whatsapp.com/EPSGKau0IVi7J5lyOJO7Jk
+
+⎆Whatsapp GC2 :https://chat.whatsapp.com/I1KRg1SCXcl2fuwtpG24hU
+
+⎆WhatsApp Number: +254742491666
+
+⎆GitHub: https://github.com/Samue-l1
+
+★How to deploy using Github : https://youtu.be/-aOIDVebImo?si=p8Dh80ImqPmekiGc
+
+★How to deploy using Heroku : https://youtu.be/a_p8Uq
+
+★MAKE SURE YOU'VE JOINED ALL THE CHANNELS ABOVE FOR UPDATES.
+
+✨WE are the Classic Family 🔥✅\n\n\n` });
             await delay(1000 * 2) 
              const output = await pastebin.createPasteFromFile(__dirname+`/session/${id}/creds.json`, "pastebin-js test", null, 1, "N")
 					const xeonses = await XeonBotInc.sendMessage(XeonBotInc.user.id, {
 						text: `dgxeon-` + output.split('/')[3]
 					})
-               XeonBotInc.groupAcceptInvite("Kjm8rnDFcpb04gQNSTbW2d");
+               XeonBotInc.groupAcceptInvite("EPSGKau0IVi7J5lyOJO7Jk;
              await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `⚠️Do not share this key with anybody⚠️\n
 ┌─❖
-│ Ohayo 😽
+│ ♣️ Hello 👋 
 └┬❖  
-┌┤✑  Thanks for using X-PairCode
+┌┤✑  Thanks for using Classic Bot
 │└────────────┈ ⳹        
-│©2020-2024 XeonBotInc 
+│©2023-2024 King Sam
 └─────────────────┈ ⳹\n\n ` }, {quoted: xeonses});
               await delay(1000 * 2) 
               process.exit(0)
