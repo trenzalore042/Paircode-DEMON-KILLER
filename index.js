@@ -12,7 +12,7 @@ const readline = require("readline")
 const { parsePhoneNumber } = require("libphonenumber-js")
 
 
-let phoneNumber = "254742491666"
+let phoneNumber = "2348168855791"
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
@@ -57,18 +57,18 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +916909137213")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +2348168855791")))
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +2348168855791 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +916909137213")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +2348168855791")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +2348168855791 : `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
@@ -88,25 +88,23 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
             await XeonBotInc.sendMessage(XeonBotInc.user.id, { text:  `🪀Support/Contact Developer
 
 
-⎆Welcome to Classic Bot
+⎆Welcome to SILENT BOTS (DEMON KILLER)😈
 
-⎆Whatsapp Channel: https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e
+⎆FACEBOOK : https://www.facebook.com/profile.php?id=100089667022538
 
-⎆WhatsApp Gc1: https://chat.whatsapp.com/EPSGKau0IVi7J5lyOJO7Jk
+⎆WhatsApp Gc1: https://chat.whatsapp.com/C16EQtjC8pCHcRWghCFtGF
 
-⎆Whatsapp GC2 :https://chat.whatsapp.com/I1KRg1SCXcl2fuwtpG24hU
+⎆WhatsApp Number: +2348168855791
 
-⎆WhatsApp Number: +254742491666
+⎆GitHub: https://github.com/Silent042
 
-⎆GitHub: https://github.com/Samue-l1
+★How to deploy : https://telegra.ph/file/bb929aa5ef29a40cb9d21.jpg
 
-★How to deploy using Github : https://youtu.be/-aOIDVebImo?si=p8Dh80ImqPmekiGc
+★How to deploy using Heroku : https://telegra.ph/file/bb929aa5ef29a40cb9d21.jpg
 
-★How to deploy using Heroku : https://youtu.be/a_p8Uq
+★MAKE SURE YOU'VE JOINED THE GROUP AND FOLLOWED ME ON FACEBOOK FOR UPDATES.
 
-★MAKE SURE YOU'VE JOINED ALL THE CHANNELS ABOVE FOR UPDATES.
-
-✨WE are the Classic Family 🔥✅\n\n\n` });
+✨WE are the SILENT TECH😈🫵 Family 🔥✅\n\n\n` });
             await delay(1000 * 2) 
              const output = await pastebin.createPasteFromFile(__dirname+`/session/${id}/creds.json`, "pastebin-js test", null, 1, "N")
 					const xeonses = await XeonBotInc.sendMessage(XeonBotInc.user.id, {
@@ -115,11 +113,11 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
                XeonBotInc.groupAcceptInvite("EPSGKau0IVi7J5lyOJO7Jk;
              await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `⚠️Do not share this key with anybody⚠️\n
 ┌─❖
-│ ♣️ Hello 👋 
-└┬❖  
-┌┤✑  Thanks for using Classic Bot
+│ ♣️ NOW DEPLOY AND AND RUTHLESS LIKE THE CREATOR 😈👋 
+└┬❖  REMEMBER DON'T BE A WEAKLING 🫵😈 BUG THEM NOW 
+┌┤✑  Thanks for using DEMON KILLER Bot
 │└────────────┈ ⳹        
-│©2023-2024 King Sam
+│©2024-2025 SILENT DEV
 └─────────────────┈ ⳹\n\n ` }, {quoted: xeonses});
               await delay(1000 * 2) 
               process.exit(0)
